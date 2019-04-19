@@ -1,5 +1,5 @@
 #include "geometry.h"
-float getarea(float r)
+float getperim(float r)
 {
 	float pr;
 	pr = 2 * p * r;
