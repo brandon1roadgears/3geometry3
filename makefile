@@ -11,3 +11,16 @@ target1:
 target2:
 	mkdir -p bin
 
+bin/geometry.exe: build/main.o build/getperim.o build/getarea.o
+	g++ $(CFLAGS) $^ -o $@
+
+build/main.o: src/main.cpp src/geometry.h
+	$(OBJ)
+
+build/getarea.o: src/getarea.cpp src/geometry.h
+	$(OBJ)
+
+build/getperim.o: src/getperim.cpp src/geometry.h
+	$(OBJ)
+
+
