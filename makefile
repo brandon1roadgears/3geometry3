@@ -23,4 +23,9 @@ build/getarea.o: src/getarea.cpp src/geometry.h
 build/getperim.o: src/getperim.cpp src/geometry.h
 	$(OBJ)
 
+clean:
+	rm build/*.o
+	rm bin/*.exe
+	rm -R build
+	rm -R bin
 
