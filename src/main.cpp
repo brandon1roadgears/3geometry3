@@ -30,6 +30,7 @@ int main()
         flag = 1;
     } else if ((d == r1 + r2) || d < (r1 + r2)) {
         flag = 1;
+      }
 
         cout << "1" << endl;
         printf("circle(%d %d , %.1f)\n", x1, y1, r1);
@@ -48,4 +49,3 @@ int main()
         system("PAUSE");
         return 0;
     }
-
