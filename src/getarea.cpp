@@ -1,7 +1,7 @@
 #include "geometry.h"
 float getarea(float r)
 {
-    foat pl;
+    float pl;
     pl = p * r * r;
     return pl;
 }
