@@ -35,14 +35,14 @@ int main()
     cout << "1" << endl;
     printf("circle(%d %d , %.1f)\n", x1, y1, r1);
     printf("perimetr = %.3f\n", perim1);
-    printf("area = %.3f\n", S1);
+    printf("area = %.3f\n", s1);
     if (flag == 1) {
         printf("intersects: \n circle \n ");
     }
     cout << "2" << endl;
     printf("circle(%d %d , %.1f)\n", x2, y2, r2);
     printf("perimetr = %.3f\n", perim2);
-    printf("area = %.3f\n", S2);
+    printf("area = %.3f\n", s2);
     if (flag == 1) {
         printf("intersects: \n circle \n ");
     }
