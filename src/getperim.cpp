@@ -5,4 +5,3 @@ float getperim(float r)
     pr = 2 * p * r;
     return pr;
 }
-
