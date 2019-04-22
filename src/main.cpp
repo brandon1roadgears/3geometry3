@@ -1,6 +1,4 @@
 #include "geometry.h"
-extern float getarea(float r);
-extern float getperim(float r);
 int main()
 {
     int x1, y1, x2, y2;
