@@ -1,8 +1,8 @@
 #include "geometry.h"
 int main()
 {
-    int x1, y1, x2, y2;
-    float r1, r2, d, flag = 0, s1, s2, perim1, perim2;
+    int x1, y1, x2, y2,flag;
+    float r1, r2, d, s1, s2, perim1, perim2;
     cout << "Input x1, y1, r1:" << endl;
     cin >> x1 >> y1 >> r1;
     cout << endl;
@@ -14,21 +14,7 @@ int main()
     s2 = getarea(r2);
     cout << endl;
     d = r1 + r2;
-    if ((r1 < r2 || r2 < r1) && x1 == x2 && y1 == y2) {
-        flag = 0;
-    } else if (r1 == r2 && x1 == x2 && y1 == y2) {
-        flag = 1;
-    }
-    if (d + r1 < r2) {
-        flag = 0;
-    } else if (((d + r1) == r2) || d + r1 > r2) {
-        flag = 1;
-    }
-    if (d > r1 + r2) {
-        flag = 1;
-    } else if ((d == r1 + r2) || d < (r1 + r2)) {
-        flag = 1;
-    }
+    flag = inter(d, r1, r2, x1,x2,y1,y2,flag);
 
     cout << "1" << endl;
     printf("circle(%d %d , %.1f)\n", x1, y1, r1);
