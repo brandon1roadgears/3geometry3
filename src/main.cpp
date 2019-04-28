@@ -1,7 +1,7 @@
 #include "geometry.h"
 int main()
 {
-    int x1, y1, x2, y2,flag;
+    int x1, y1, x2, y2, flag;
     float r1, r2, d, s1, s2, perim1, perim2;
     cout << "Input x1, y1, r1:" << endl;
     cin >> x1 >> y1 >> r1;
@@ -14,7 +14,7 @@ int main()
     s2 = getarea(r2);
     cout << endl;
     d = r1 + r2;
-    flag = inter(d, r1, r2, x1,x2,y1,y2,flag);
+    flag = inter(d, r1, r2, x1, x2, y1, y2, flag);
 
     cout << "1" << endl;
     printf("circle(%d %d , %.1f)\n", x1, y1, r1);
