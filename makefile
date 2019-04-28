@@ -18,7 +18,7 @@ target3:
 target4:
 	mkdir -p build/test
 
-bin/geometry.exe: build/main.o build/getperim.o build/getarea.o
+bin/geometry.exe: build/main.o build/getperim.o build/getarea.o build/inter.o
 	g++ $(CFLAGS) $^ -o $@
 
 build/main.o: src/main.cpp src/geometry.h
@@ -30,10 +30,11 @@ build/getarea.o: src/getarea.cpp src/geometry.h
 build/getperim.o: src/getperim.cpp src/geometry.h
 	$(OBJ)
 
+build/inter.o: src/inter.cpp src/geometry.h
+
 
 clean:
 	rm build/*.o
 	rm bin/*.exe
 	rm -R build
 	rm -R bin
-
