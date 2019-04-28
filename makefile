@@ -33,7 +33,7 @@ build/getperim.o: src/getperim.cpp src/geometry.h
 build/inter.o: src/inter.cpp src/geometry.h
 	$(OBJ)
 
-bin/TESTgeometry: build/test/test.o build/test/getarea.o build/test/getperim.o build/test/inter.o
+bin/geometry-test: build/test/test.o build/test/getarea.o build/test/getperim.o build/test/inter.o
 	g++ $(CFLAGS) -I thirtdparty/catch2 $^ -o $@
 
 build/test/test.o: test/test.cpp test/TESTgeometry.h
@@ -50,4 +50,4 @@ build/test/inter.o: test/TESTinter.cpp test/TESTgeometry.h
 
 clean:
 	rm -r build
-	rm -r bin 
+	rm -r bin
