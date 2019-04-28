@@ -48,7 +48,6 @@ build/test/getperim.o: test/TESTgetperim.cpp test/TESTgeometry.h
 build/test/inter.o: test/TESTinter.cpp test/TESTgeometry.h
 	$(TOBJT)
 
-build/test/getarea.o
 clean:
 	rm build/*.o
 	rm bin/*.exe
