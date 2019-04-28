@@ -31,6 +31,7 @@ build/getperim.o: src/getperim.cpp src/geometry.h
 	$(OBJ)
 
 build/inter.o: src/inter.cpp src/geometry.h
+	$(OBJ)
 
 
 clean:

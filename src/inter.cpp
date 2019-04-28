@@ -16,4 +16,5 @@ int inter(float d, float r1, float r2, int x1, int x2, int y1, int y2, int flag)
   } else if ((d == r1 + r2) || d < (r1 + r2)) {
       flag = 1;
   }
+  return flag;
 }
