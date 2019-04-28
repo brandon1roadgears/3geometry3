@@ -1,4 +1,4 @@
-#include "geometry.h"
+getperim#include "geometry.h"
 float getperim(float r)
 {
     float pr;
@@ -7,12 +7,12 @@ float getperim(float r)
 }
 
 TEST_CASE("GETPERIM", "[PERIM]") {
-  REQUIRE(getarea(1) == 6.28319);
-  REQUIRE(getarea(2) == 12.5664);
-  REQUIRE(getarea(3) == 18.8496);
-  REQUIRE(getarea(4) == 25.1327);
-  REQUIRE(getarea(5) == 31.4159);
-  REQUIRE(getarea(10) == 62.8319);
-  REQUIRE(getarea(15) == 94.2478);
+  REQUIRE(getperim(1) == 6.28319);
+  REQUIRE(getperim(2) == 12.5664);
+  REQUIRE(getperim(3) == 18.8496);
+  REQUIRE(getperim(4) == 25.1327);
+  REQUIRE(getperim(5) == 31.4159);
+  REQUIRE(getperim(10) == 62.8319);
+  REQUIRE(getperim(15) == 94.2478);
   cout << "Test getarea" << endl;
 }

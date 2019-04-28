@@ -19,12 +19,12 @@ int inter(float d, float r1, float r2, int x1, int x2, int y1, int y2, int flag)
     return flag;
 }
 TEST_CASE("INTER", "[I]") {
-  REQUIRE(getarea(1,1,2,3,4,5,6,0) == 1);
-  REQUIRE(getarea(2,4,6,8,10,1,1,0) == 1);
-  REQUIRE(getarea(1,1,1,1,1,1,1,1) == 1);
-  REQUIRE(getarea(0,0,0,0,0,0,0,0) == 1);
-  REQUIRE(getarea(15,1,2,3,4,5,6,0) == 1);
-  REQUIRE(getarea(2,7,40,1,2,3,4,0) == 1);
-  REQUIRE(getarea(15,7,8,11,99,12,99,0) == 1);
+  REQUIRE(inter(1,1,2,3,4,5,6,0) == 1);
+  REQUIRE(inter(2,4,6,8,10,1,1,0) == 1);
+  REQUIRE(inter(1,1,1,1,1,1,1,1) == 1);
+  REQUIRE(inter(0,0,0,0,0,0,0,0) == 1);
+  REQUIRE(inter(15,1,2,3,4,5,6,0) == 1);
+  REQUIRE(inter(2,7,40,1,2,3,4,0) == 1);
+  REQUIRE(inter(15,7,8,11,99,12,99,0) == 1);
   cout << "Test inter" << endl;
 }
