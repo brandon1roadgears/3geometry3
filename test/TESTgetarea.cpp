@@ -7,12 +7,12 @@ float getarea(float r)
 }
 
 TEST_CASE("GETAREA", "[AREA]") {
-  REQUIRE(getarea(1) == 3.14159);
-  REQUIRE(getarea(2) == 12.5664);
-  REQUIRE(getarea(3) == 28.2743);
-  REQUIRE(getarea(4) == 50.2655);
-  REQUIRE(getarea(5) == 78.5398);
-  REQUIRE(getarea(10) == 314.159);
-  REQUIRE(getarea(15) == 706.858);
+  REQUIRE(getarea(1) == 3.14159f);
+  REQUIRE(getarea(2) == 12.5664f);
+  REQUIRE(getarea(3) == 28.2743f);
+  REQUIRE(getarea(4) == 50.2655f);
+  REQUIRE(getarea(5) == 78.5398f);
+  REQUIRE(getarea(10) == 314.159f);
+  REQUIRE(getarea(15) == 706.858f);
   cout << "Test getarea" << endl;
 }
