@@ -8,7 +8,7 @@ float getarea(float r)
 
 TEST_CASE("GETAREA", "[AREA]") {
   REQUIRE(getarea(2.2) == 15.20531f);
-  REQUIRE(getarea(6.11) == 117.282f);
+  REQUIRE(getarea(6.11) == 117.28226f);
   REQUIRE(getarea(4.21) == 55.6819f);
   REQUIRE(getarea(8.98) == 253.339f);
   REQUIRE(getarea(7.01) == 154.378f);
