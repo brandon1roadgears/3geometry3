@@ -14,5 +14,5 @@ TEST_CASE("GETPERIM", "[PERIM]") {
   REQUIRE(getperim(5.65) == 35.5);
   REQUIRE(getperim(55.55) == 349.031);
   REQUIRE(getperim(94.22) == 592.002);
-  cout << "Test getarea" << endl;
+  cout << "Test getperim" << endl;
 }
