@@ -7,11 +7,11 @@ float getperim(float r)
 }
 
 TEST_CASE("GETPERIM", "[PERIM]") {
-  REQUIRE(getperim(2.2) == 13.8231);
-  REQUIRE(getperim(6.11) == 38.3903);
-  REQUIRE(getperim(4.21)  == 26.4522);
-  REQUIRE(getperim(8.98) == 56.423);
-  REQUIRE(getperim(7.01) == 44.0451);
-  REQUIRE(getperim(10.10) == 63.4602);
+  REQUIRE(getperim(2.2) == 13.8231f);
+  REQUIRE(getperim(6.11) == 38.3903f);
+  REQUIRE(getperim(4.21)  == 26.4522f);
+  REQUIRE(getperim(8.98) == 56.423f);
+  REQUIRE(getperim(7.01) == 44.0451f);
+  REQUIRE(getperim(10.10) == 63.4602f);
   cout << "Test getperim is done" << endl;
 }
