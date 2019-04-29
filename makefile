@@ -34,7 +34,7 @@ build/inter.o: src/inter.cpp src/geometry.h
 	$(OBJ)
 
 bin/geometry-test: build/test/test.o build/test/getarea.o build/test/getperim.o build/test/inter.o
-	g++ $(CFLAGS) -I thirtdparty/catch2 $^ -o $@
+	g++ $(TOBJT) -I thirtdparty/catch2 $^ -o $@
 
 build/test/test.o: test/test.cpp test/TESTgeometry.h
 	$(TOBJT)
