@@ -13,7 +13,7 @@ int main() {
   s2 = getarea(r2);
   cout << endl;
   d = r1 + r2;
-	if ((r1 < r2 || r2 < r1) && x1 == x2 && y1 == y2) {
+  if ((r1 < r2 || r2 < r1) && x1 == x2 && y1 == y2) {
     flag = 0;
   } else if (r1 == r2 && x1 == x2 && y1 == y2) {
     flag = 1;
