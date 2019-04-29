@@ -34,7 +34,7 @@ build/inter.o: src/inter.cpp src/geometry.h
 	$(OBJ)
 
 bin/geometry-test: build/test/test.o build/test/getarea.o build/test/getperim.o build/test/inter.o
-	g++ $(TOBJT) -I thirtdparty/catch2 $^ -o $@
+	g++ $(CFLAGS) $^ -o $@
 
 build/test/test.o: test/test.cpp test/TESTgeometry.h
 	$(TOBJT)
@@ -49,5 +49,7 @@ build/test/inter.o: test/TESTinter.cpp test/TESTgeometry.h
 	$(TOBJT)
 
 clean:
-	rm -r build
-	rm -r bin
+	rm build/*.o
+	rm bin/*.exe
+	rm -R -f build
+	rm -R -f bin
