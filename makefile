@@ -18,23 +18,23 @@ target3:
 target4:
 	mkdir -p build/test
 
-bin/geometry.exe: build/main.o build/getperim.o build/getarea.o build/inter.o
+bin/geometry.exe: build/src/main.o build/src/getperim.o build/src/getarea.o build/src/inter.o
 	g++ $(CFLAGS) $^ -o $@
 
-build/main.o: src/main.cpp src/geometry.h
+build/src/main.o: src/main.cpp src/geometry.h
 	$(OBJ)
 
-build/getarea.o: src/getarea.cpp src/geometry.h
+build/src/getarea.o: src/getarea.cpp src/geometry.h
 	$(OBJ)
 
-build/getperim.o: src/getperim.cpp src/geometry.h
+build/src/getperim.o: src/getperim.cpp src/geometry.h
 	$(OBJ)
 
-build/inter.o: src/inter.cpp src/geometry.h
+build/src/inter.o: src/inter.cpp src/geometry.h
 	$(OBJ)
 
 bin/geometry-test: build/test/test.o build/test/getarea.o build/test/getperim.o build/test/inter.o
-	g++ $(CFLAGS) $^ -o $@
+	g++ $(CFLAGS)  $^ -o $@
 
 build/test/test.o: test/test.cpp test/TESTgeometry.h
 	$(TOBJT)
