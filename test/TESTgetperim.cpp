@@ -7,7 +7,7 @@ float getperim(float r)
 }
 
 TEST_CASE("GETPERIM", "[PERIM]") {
-  REQUIRE(getperim(1.19) == 6.28319);
+  REQUIRE(getperim(1.19) == 7.47699);
   REQUIRE(getperim(1.25) == 7.85398);
   REQUIRE(getperim(3.1) == 19.4779);
   REQUIRE(getperim(4.96) == 31.1646);
