@@ -4,7 +4,7 @@ TOBJT = g++ $(GFLAGS) -I thirtdparty/catch2 -c $< -o $@
 
 .PHONY: clean
 
-all: target1 target2 target3 target4 bin/geometry.exe
+all: target1 target2 target3 target4 bin/geometry.exe bin/geometry-test
 
 target1:
 	mkdir -p build
