@@ -4,7 +4,7 @@ TOBJT = g++ -std=c++11 $(CFLAGS) -I thirtdparty/catch2 -c $< -o $@
 
 .PHONY: clean
 
-all: target1 target2 target3 target4
+all: target1 target2 target3 target4 bin/geometry.exe
 
 target1:
 	mkdir -p build
@@ -32,7 +32,7 @@ build/src/getperim.o: src/getperim.cpp src/geometry.h
 
 
 bin/geometry-test: build/test/test.o build/test/getarea.o build/test/getperim.o
-	g++ -std=c++11 $(CFLAGS)  $^ -o $@
+	g++ -std=c++11$(CFLAGS)  $^ -o $@
 
 build/test/test.o: test/test.cpp test/TESTgeometry.h
 	$(TOBJT)
