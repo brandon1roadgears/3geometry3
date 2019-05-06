@@ -32,7 +32,7 @@ build/src/getperim.o: src/getperim.cpp src/geometry.h
 
 
 bin/geometry-test: build/test/test.o build/test/getarea.o build/test/getperim.o
-	g++ -std=c++11$(CFLAGS)  $^ -o $@
+	g++ -std=c++11 $(CFLAGS)  $^ -o $@
 
 build/test/test.o: test/test.cpp test/TESTgeometry.h
 	$(TOBJT)
