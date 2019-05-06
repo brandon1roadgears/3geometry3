@@ -1,6 +1,6 @@
 CFLAGS = -Wall -Werror
-OBJ = g++ $(CFLAGS) -c $< -o $@
-TOBJT = g++ $(CFLAGS) -I thirtdparty/catch2 -c $< -o $@
+OBJ = g++ -std=c++11 $(CFLAGS) -c $< -o $@
+TOBJT = g++ -std=c++11 $(CFLAGS) -I thirtdparty/catch2 -c $< -o $@
 
 .PHONY: clean
 
@@ -19,7 +19,7 @@ target4:
 	mkdir -p build/test
 
 bin/geometry.exe: build/src/main.o build/src/getperim.o build/src/getarea.o
-	g++ $(CFLAGS) $^ -o $@
+	g++ -std=c++11 $(CFLAGS) $^ -o $@
 
 build/src/main.o: src/main.cpp src/geometry.h
 	$(OBJ)
@@ -32,7 +32,7 @@ build/src/getperim.o: src/getperim.cpp src/geometry.h
 
 
 bin/geometry-test: build/test/test.o build/test/getarea.o build/test/getperim.o
-	g++ $(CFLAGS)  $^ -o $@
+	g++ -std=c++11 $(CFLAGS)  $^ -o $@
 
 build/test/test.o: test/test.cpp test/TESTgeometry.h
 	$(TOBJT)
